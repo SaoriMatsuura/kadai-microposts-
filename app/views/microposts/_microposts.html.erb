@@ -9,8 +9,7 @@
         <div>
           <p class="mb-0"><%= micropost.content %></p>
         </div>
-        <div>
-
+        <div class="row">
           <%= render 'favorites/favorite_button', micropost: micropost %>
 
           <% if current_user == micropost.user %>
